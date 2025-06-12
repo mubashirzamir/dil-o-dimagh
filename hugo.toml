@@ -1,0 +1,13 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Dil-o-Dimagh'
+theme = ["PaperMod"]
+
+[params.homeInfoParams]
+Title = "Hi, this is Mubashir!"
+Content = "This is my blog."
+
+[module]
+  [[module.mounts]]
+    source = '/home/mushi/personal/obsidian/fikr-nama/Dil-o-Dimagh'
+    target = 'content'
