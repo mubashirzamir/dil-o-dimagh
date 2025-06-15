@@ -34,5 +34,5 @@ home = ["HTML", "RSS", "JSON"]
     
 [module]
   [[module.mounts]]
-    source = '/home/mushi/personal/obsidian/fikr-nama/Dil-o-Dimagh'
+    source = '/home/mushi/personal/fikr-nama/Dil-o-Dimagh'
     target = 'content'
