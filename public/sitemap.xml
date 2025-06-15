@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:45631/</loc>
+    <loc>https://dil-o-dimagh.onrender.com/</loc>
     <lastmod>2025-06-12T15:57:21+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:45631/search/</loc>
+    <loc>https://dil-o-dimagh.onrender.com/search/</loc>
     <lastmod>2025-06-12T15:57:21+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:45631/posts/my-first-post/</loc>
+    <loc>https://dil-o-dimagh.onrender.com/posts/my-first-post/</loc>
     <lastmod>2025-06-12T02:29:27+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:45631/posts/</loc>
+    <loc>https://dil-o-dimagh.onrender.com/posts/</loc>
     <lastmod>2025-06-12T02:29:27+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:45631/categories/</loc>
+    <loc>https://dil-o-dimagh.onrender.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:45631/tags/</loc>
+    <loc>https://dil-o-dimagh.onrender.com/tags/</loc>
   </url>
 </urlset>
