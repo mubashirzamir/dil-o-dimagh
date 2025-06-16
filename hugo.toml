@@ -18,8 +18,7 @@ url = "https://github.com/mubashirzamir"
 [params]
 ShowReadingTime = true
 ShowCodeCopyButtons = true
-hideFooter = true
-
+ShowPostNavLinks = true
 ShowToc = true
 
 [outputs]
