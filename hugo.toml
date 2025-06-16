@@ -29,7 +29,12 @@ home = ["HTML", "RSS", "JSON"]
     name = "Search"
     url = "/search/"
     weight = 1
-    
+  
+  [[menu.main]]
+    name = "Archive"
+    url = "/archive/"
+    weight = 2
+        
 [module]
   [[module.mounts]]
     source = '/home/mushi/personal/fikr-nama/Dil-o-Dimagh'
