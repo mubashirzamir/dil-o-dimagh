@@ -5,7 +5,7 @@ theme = ["PaperMod"]
 
 [params.homeInfoParams]
 Title = "Hi, this is Mubashir!"
-Content = "i share things I find interesting on here."
+Content = "I share things I find interesting on here."
 
 [[params.socialIcons]]
 name = "LinkedIn"
