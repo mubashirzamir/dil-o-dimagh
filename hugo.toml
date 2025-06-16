@@ -32,7 +32,7 @@ home = ["HTML", "RSS", "JSON"]
   
   [[menu.main]]
     name = "Archive"
-    url = "/archive/"
+    url = "/archives/"
     weight = 2
         
 [module]
