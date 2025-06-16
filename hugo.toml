@@ -21,6 +21,9 @@ ShowCodeCopyButtons = true
 ShowPostNavLinks = true
 ShowToc = true
 
+[params.footer]
+text = "Mubashir Zamir"
+
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
