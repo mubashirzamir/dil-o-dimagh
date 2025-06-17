@@ -25,5 +25,23 @@
       <guid>https://dil-o-dimagh.onrender.com/posts/my-first-post/</guid>
       <description>&lt;p&gt;Sphinx of black quartz, judge my vow.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title></title>
+      <link>https://dil-o-dimagh.onrender.com/dil-o-dimagh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://dil-o-dimagh.onrender.com/dil-o-dimagh/</guid>
+      <description>&lt;p&gt;%% Begin Waypoint %%&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[archives]]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;posts&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;[[My First Post]]&lt;/li&gt;
+&lt;li&gt;[[The Case for Dual Monitors by a Stubborn Developer]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[[search]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;%% End Waypoint %%&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
