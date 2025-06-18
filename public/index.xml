@@ -6,8 +6,18 @@
     <description>Recent content on Dil-o-Dimagh</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Jun 2025 12:27:57 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 17 Jun 2025 21:55:12 +0300</lastBuildDate>
     <atom:link href="https://dil-o-dimagh.onrender.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obsidian Note Widgets (Desklets) on Linux Mint</title>
+      <link>https://dil-o-dimagh.onrender.com/posts/obsidian-note-widgets-desklets-on-linux-mint/</link>
+      <pubDate>Tue, 17 Jun 2025 21:55:12 +0300</pubDate>
+      <guid>https://dil-o-dimagh.onrender.com/posts/obsidian-note-widgets-desklets-on-linux-mint/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;#tutorial&#34;&gt;TL;DR&lt;/a&gt;: Steps on how to set it up for Linux Mint Cinnamon Desktop Environment.&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h1&gt;
+&lt;p&gt;As I become more obsessed with &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt;, I started looking for widgets for both mobile and desktop that display my notes, more specifically my DO and TODO lists.&lt;/p&gt;
+&lt;p&gt;For this post, my proposed solution is going to be for desktop, specifically the Linux Mint Cinnamon environment, although I found some interesting applications for mobile devices in the &lt;a href=&#34;#literature-review&#34;&gt;Literature Review&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Case for Dual Monitors by a Stubborn Developer</title>
       <link>https://dil-o-dimagh.onrender.com/posts/the-case-for-dual-monitors-by-a-stubborn-developer/</link>
