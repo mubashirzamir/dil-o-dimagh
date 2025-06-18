@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Obsidian Note Widgets (Desklets) on Linux Mint | Dil-o-Dimagh</title>
+<meta name="keywords" content="">
+<meta name="description" content="TL;DR: Steps on how to set it up for Linux Mint Cinnamon Desktop Environment.
+Problem Statement
+As I become more obsessed with Obsidian, I started looking for widgets for both mobile and desktop that display my notes, more specifically my DO and TODO lists.
+For this post, my proposed solution is going to be for desktop, specifically the Linux Mint Cinnamon environment, although I found some interesting applications for mobile devices in the Literature Review.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/obsidian-note-widgets-desklets-on-linux-mint/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/obsidian-note-widgets-desklets-on-linux-mint/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Dil-o-Dimagh (Alt + H)">Dil-o-Dimagh</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Obsidian Note Widgets (Desklets) on Linux Mint
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2025-06-17 21:55:12 +0300 +0300'>June 17, 2025</span>&nbsp;·&nbsp;3 min
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#problem-statement" aria-label="Problem Statement">Problem Statement</a></li>
+                <li>
+                    <a href="#requirements" aria-label="Requirements">Requirements</a></li>
+                <li>
+                    <a href="#literature-review" aria-label="Literature Review">Literature Review</a><ul>
+                        
+                <li>
+                    <a href="#ipad--iphone" aria-label="IPad &amp; IPhone">IPad &amp; IPhone</a><ul>
+                        
+                <li>
+                    <a href="#widgets-for-obsidian" aria-label="Widgets for Obsidian">Widgets for Obsidian</a></li></ul>
+                </li>
+                <li>
+                    <a href="#android" aria-label="Android">Android</a><ul>
+                        
+                <li>
+                    <a href="#obsi" aria-label="Obsi">Obsi</a></li></ul>
+                </li>
+                <li>
+                    <a href="#linux-mint" aria-label="Linux Mint">Linux Mint</a></li></ul>
+                </li>
+                <li>
+                    <a href="#tutorial" aria-label="Tutorial">Tutorial</a><ul>
+                        
+                <li>
+                    <a href="#viewing--editing" aria-label="Viewing &amp; Editing">Viewing &amp; Editing</a></li>
+                <li>
+                    <a href="#syncing" aria-label="Syncing">Syncing</a></li></ul>
+                </li>
+                <li>
+                    <a href="#limitations" aria-label="Limitations">Limitations</a></li>
+                <li>
+                    <a href="#conclusion" aria-label="Conclusion">Conclusion</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><strong><a href="#tutorial">TL;DR</a>: Steps on how to set it up for Linux Mint Cinnamon Desktop Environment.</strong></p>
+<h1 id="problem-statement">Problem Statement<a hidden class="anchor" aria-hidden="true" href="#problem-statement">#</a></h1>
+<p>As I become more obsessed with <a href="https://obsidian.md/">Obsidian</a>, I started looking for widgets for both mobile and desktop that display my notes, more specifically my DO and TODO lists.</p>
+<p>For this post, my proposed solution is going to be for desktop, specifically the Linux Mint Cinnamon environment, although I found some interesting applications for mobile devices in the <a href="#literature-review">Literature Review</a>.</p>
+<h1 id="requirements">Requirements<a hidden class="anchor" aria-hidden="true" href="#requirements">#</a></h1>
+<ul>
+<li>See and edit my todo lists at a glance.</li>
+</ul>
+<h1 id="literature-review">Literature Review<a hidden class="anchor" aria-hidden="true" href="#literature-review">#</a></h1>
+<h2 id="ipad--iphone">IPad &amp; IPhone<a hidden class="anchor" aria-hidden="true" href="#ipad--iphone">#</a></h2>
+<h3 id="widgets-for-obsidian"><a href="https://apps.apple.com/us/app/widgets-for-obsidian/id6642646117">Widgets for Obsidian</a><a hidden class="anchor" aria-hidden="true" href="#widgets-for-obsidian">#</a></h3>
+<p>Looks it may be able to achieve what I am trying to do. However, I don&rsquo;t have either an IPad or IPhone, nor I plan on getting one soon.</p>
+<h2 id="android">Android<a hidden class="anchor" aria-hidden="true" href="#android">#</a></h2>
+<h3 id="obsi"><a href="https://obsi.pro/">Obsi</a><a hidden class="anchor" aria-hidden="true" href="#obsi">#</a></h3>
+<p>Lots of great reviews. Unfortunately, current does not support any widgets.</p>
+<h2 id="linux-mint">Linux Mint<a hidden class="anchor" aria-hidden="true" href="#linux-mint">#</a></h2>
+<p>Zilch&hellip;Looks like we&rsquo;ll have to come up with our own. I&rsquo;ve been recently getting my hands dirty trying to develop a <a href="https://github.com/linuxmint/cinnamon-spices-applets/pull/7361">Cinnamon applet</a> anyway and this new project would look great on my pile of unfinished projects.</p>
+<p>Fortunately, before resorting to the nuclear option and diving right into development, I explored Cinnamon&rsquo;s existing <a href="https://cinnamon-spices.linuxmint.com/desklets/view/38">Note desklet by schorshii</a> and was able to duct-tape a solution that fulfils my requirements well enough.</p>
+<h1 id="tutorial">Tutorial<a hidden class="anchor" aria-hidden="true" href="#tutorial">#</a></h1>
+<h2 id="viewing--editing">Viewing &amp; Editing<a hidden class="anchor" aria-hidden="true" href="#viewing--editing">#</a></h2>
+<ol>
+<li>
+<p>Download and add the Note desklet by schorshii.
+<img alt="desklet" loading="lazy" src="/posts/obsidian-note-widgets-desklets-on-linux-mint/images/desklet.png"></p>
+</li>
+<li>
+<p>Provide the <code>Path to note text file</code> as the note you want to the desklet to display.
+<img alt="desklet" loading="lazy" src="/posts/obsidian-note-widgets-desklets-on-linux-mint/images/desklet-configure.png"></p>
+</li>
+<li>
+<p>In the <code>Command for editing this note (on mouse click)</code> add <code>xdg-open obsidian://open?vault=your-vault-name&amp;file=your-file</code> (You can simply get this link by right clicking any note in Obsidian and use the <code>Copy Obsidian URL option</code>)</p>
+</li>
+<li>
+<p>Theoretically, you can add as many such desklets as you want (I have only tested with two.)
+<img alt="desklet" loading="lazy" src="/posts/obsidian-note-widgets-desklets-on-linux-mint/images/desklets.png"></p>
+</li>
+</ol>
+<h2 id="syncing">Syncing<a hidden class="anchor" aria-hidden="true" href="#syncing">#</a></h2>
+<p>I am going to leave the the syncing right from the desklet as future work to be done. Let&rsquo;s be honest - since there are 4 different syncing methods (of which I use Git), I might never get around to it.</p>
+<p>For now I&rsquo;ve just added Obsidian to my startup so that the notes sync initially and set the <code>Auto Pull Interval (minutes)</code> to <code>5</code> under my Git plugin settings.</p>
+<h1 id="limitations">Limitations<a hidden class="anchor" aria-hidden="true" href="#limitations">#</a></h1>
+<ul>
+<li>Desklet does not update automatically on file change from different device</li>
+<li>The desklet does not render markdown</li>
+<li>Opens Obsidian on click - does not allow direct edits in desklet</li>
+</ul>
+<h1 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h1>
+<p>Usually the projects I take on turn out to be a lot more complex than they seem, this was the exact opposite. I guess this is the power of open source, simple open standards, configurability&hellip;And yes also me being content with the limitations.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/the-case-for-dual-monitors-by-a-stubborn-developer/">
+    <span class="title">Next »</span>
+    <br>
+    <span>The Case for Dual Monitors by a Stubborn Developer</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Dil-o-Dimagh</a></span> · 
+        Mubashir Zamir
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
