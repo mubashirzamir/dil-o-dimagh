@@ -1,6 +1,6 @@
 baseURL = 'https://dil-o-dimagh.onrender.com/'
 languageCode = 'en-us'
-title = 'Dil-o-Dimagh'
+title = """Dil-o-Dimagh (Heart & Mind)"""
 theme = ["PaperMod"]
 
 [params.homeInfoParams]
