@@ -240,25 +240,25 @@ My proposed solution, as the title suggests, is going to be for desktop, specifi
 </div>
 
   <div class="post-content"><p><strong><a href="#tutorial">TL;DR</a>: Steps on how to set it up for Linux Mint Cinnamon Desktop Environment.</strong></p>
-<h1 id="problem-statement">Problem Statement<a hidden class="anchor" aria-hidden="true" href="#problem-statement">#</a></h1>
+<h2 id="problem-statement">Problem Statement<a hidden class="anchor" aria-hidden="true" href="#problem-statement">#</a></h2>
 <p>In my most recent <a href="https://obsidian.md/">Obsidian</a> obsession, I started looking for widgets - both mobile and desktop that display my notes, more specifically my DO and TODO lists. The journey has culminated into this post.</p>
 <p>My proposed solution, as the title suggests, is going to be for desktop, specifically the Linux Mint Cinnamon environment. Nevertheless, I did find some interesting applications for mobile devices in my <a href="#literature-review">Literature Review</a>.</p>
-<h1 id="requirements">Requirements<a hidden class="anchor" aria-hidden="true" href="#requirements">#</a></h1>
+<h2 id="requirements">Requirements<a hidden class="anchor" aria-hidden="true" href="#requirements">#</a></h2>
 <ul>
 <li>See and edit my Obsidian notes at a glance from a Cinnamon desklet</li>
 </ul>
-<h1 id="literature-review">Literature Review<a hidden class="anchor" aria-hidden="true" href="#literature-review">#</a></h1>
-<h2 id="ipad--iphone">IPad &amp; IPhone<a hidden class="anchor" aria-hidden="true" href="#ipad--iphone">#</a></h2>
-<h3 id="widgets-for-obsidian"><a href="https://apps.apple.com/us/app/widgets-for-obsidian/id6642646117">Widgets for Obsidian</a><a hidden class="anchor" aria-hidden="true" href="#widgets-for-obsidian">#</a></h3>
+<h2 id="literature-review">Literature Review<a hidden class="anchor" aria-hidden="true" href="#literature-review">#</a></h2>
+<h3 id="ipad--iphone">IPad &amp; IPhone<a hidden class="anchor" aria-hidden="true" href="#ipad--iphone">#</a></h3>
+<h4 id="widgets-for-obsidian"><a href="https://apps.apple.com/us/app/widgets-for-obsidian/id6642646117">Widgets for Obsidian</a><a hidden class="anchor" aria-hidden="true" href="#widgets-for-obsidian">#</a></h4>
 <p>Looks promising. However, I don&rsquo;t have an IPad or an IPhone, nor do I plan on getting them soon.</p>
-<h2 id="android">Android<a hidden class="anchor" aria-hidden="true" href="#android">#</a></h2>
-<h3 id="obsi"><a href="https://obsi.pro/">Obsi</a><a hidden class="anchor" aria-hidden="true" href="#obsi">#</a></h3>
+<h3 id="android">Android<a hidden class="anchor" aria-hidden="true" href="#android">#</a></h3>
+<h4 id="obsi"><a href="https://obsi.pro/">Obsi</a><a hidden class="anchor" aria-hidden="true" href="#obsi">#</a></h4>
 <p>Lots of great reviews. Unfortunately, the current version does not support any widgets.</p>
-<h2 id="linux-mint">Linux Mint<a hidden class="anchor" aria-hidden="true" href="#linux-mint">#</a></h2>
+<h3 id="linux-mint">Linux Mint<a hidden class="anchor" aria-hidden="true" href="#linux-mint">#</a></h3>
 <p>Zilch&hellip;Looks like we&rsquo;ll have to come up with our own. I&rsquo;ve been recently getting my hands dirty trying to develop a <a href="https://github.com/linuxmint/cinnamon-spices-applets/pull/7361">Cinnamon applet</a> anyway and this new project will look great on my pile of unfinished projects.</p>
 <p>Fortunately, before resorting to the nuclear mindset above and diving right into development, I explored Cinnamon&rsquo;s existing <a href="https://cinnamon-spices.linuxmint.com/desklets/view/38">Note desklet by schorshii</a> and was able to duct-tape a solution that fulfils my requirements well enough.</p>
-<h1 id="tutorial">Tutorial<a hidden class="anchor" aria-hidden="true" href="#tutorial">#</a></h1>
-<h2 id="viewing--editing">Viewing &amp; Editing<a hidden class="anchor" aria-hidden="true" href="#viewing--editing">#</a></h2>
+<h2 id="tutorial">Tutorial<a hidden class="anchor" aria-hidden="true" href="#tutorial">#</a></h2>
+<h3 id="viewing--editing">Viewing &amp; Editing<a hidden class="anchor" aria-hidden="true" href="#viewing--editing">#</a></h3>
 <ol>
 <li>
 <p>Download and add the <code>Note desklet by schorshii</code>.
@@ -276,16 +276,16 @@ My proposed solution, as the title suggests, is going to be for desktop, specifi
 <img alt="Desklets" loading="lazy" src="/posts/3.-obsidian-note-widgets-desklets-on-linux-mint/images/desklets.png"></p>
 </li>
 </ol>
-<h2 id="syncing">Syncing<a hidden class="anchor" aria-hidden="true" href="#syncing">#</a></h2>
+<h3 id="syncing">Syncing<a hidden class="anchor" aria-hidden="true" href="#syncing">#</a></h3>
 <p>I am going to leave syncing directly from the desklet as future work. Let&rsquo;s be honest - since there are 4 different syncing methods (of which I use Git), I might never get around to it.</p>
 <p>For now I&rsquo;ve just added Obsidian to my startup so that the notes sync on startup and set the <code>Auto Pull Interval (minutes)</code> to <code>5</code> under my Git plugin settings.</p>
-<h1 id="limitations">Limitations<a hidden class="anchor" aria-hidden="true" href="#limitations">#</a></h1>
+<h2 id="limitations">Limitations<a hidden class="anchor" aria-hidden="true" href="#limitations">#</a></h2>
 <ul>
 <li>Desklet does not update automatically on file change from different device</li>
 <li>The desklet does not render markdown</li>
 <li>Opens Obsidian on click - does not allow direct edits in desklet</li>
 </ul>
-<h1 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h1>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
 <p>Usually the projects I take on turn out to be a lot more complex than they seem, this was the exact opposite. I guess this is the power of open source, open standards and configurability. And yes definitely me being content with the limitations.</p>
 
 
